@@ -1,27 +1,12 @@
-# AngularTaskList
+# Task List with Angular and Angular Material
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+![image](https://user-images.githubusercontent.com/93260/126806169-6a50769d-ad4b-49dc-a5d0-aa69af05c7d4.png)
 
-## Development server
+Followed the tutorial on [YouTube](https://www.youtube.com/watch?v=3dHNOWTI7H8&t=1287s&ab_channel=TraversyMedia)
+but used Angular Material instead and wrote a few things slightly differently.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+It also uses [json-server](https://github.com/typicode/json-server) which you can run with the npm script provided that
+is also called **json-server**. It will start the server on port 5000 using the **db.json** file.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+It is basically a very simple task list app where you can add and remove tasks. A task has a text, time and a reminder
+which will highlight it in the list.
