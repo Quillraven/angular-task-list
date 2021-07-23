@@ -1,0 +1,17 @@
+<mat-card
+  [ngClass]="{'card-reminder': task.reminder}"
+  class="card-container"
+  (dblclick)="onToggleReminder()"
+>
+  <mat-card-header>
+    <mat-card-title [ngClass]="{'card-reminder': task.reminder}">{{task.text}}</mat-card-title>
+    <mat-card-subtitle [ngClass]="{'card-reminder-subtitle': task.reminder}">{{task.day}}</mat-card-subtitle>
+    <button class="btn-remove"
+            mat-mini-fab color="warn"
+            aria-label="Delete task"
+            (click)="onDelete()"
+    >
+      <mat-icon>remove</mat-icon>
+    </button>
+  </mat-card-header>
+</mat-card>
