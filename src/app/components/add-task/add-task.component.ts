@@ -18,6 +18,7 @@ export class AddTaskComponent implements OnInit {
 
   constructor(private uiService: UiService) {
     this.subscription = uiService.onShowSaveTaskToggle().subscribe(value => this.show = value)
+    this.show = uiService.showSaveTaskForm()
   }
 
   ngOnInit(): void {

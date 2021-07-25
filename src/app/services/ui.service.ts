@@ -16,6 +16,10 @@ export class UiService {
     this.subject.next(this.showSaveTask)
   }
 
+  showSaveTaskForm(): boolean {
+    return this.showSaveTask
+  }
+
   onShowSaveTaskToggle(): Observable<any> {
     return this.subject.asObservable()
   }
