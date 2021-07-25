@@ -1,0 +1,27 @@
+@use 'sass:map';
+@use '~@angular/material' as mat;
+
+@mixin color($theme) {
+  $color-config: mat.get-color-config($theme);
+
+  $accent-palette: map.get($color-config, 'accent');
+
+  .card-reminder {
+    background-color: mat.get-color-from-palette($accent-palette);
+  }
+
+  .card-reminder {
+    color: rgba(0, 0, 0, .87);
+  }
+
+  .card-reminder-subtitle {
+    color: rgba(0, 0, 0, 0.65);
+  }
+}
+
+@mixin theme($theme) {
+  $color-config: mat.get-color-config($theme);
+  @if $color-config != null {
+    @include color($theme);
+  }
+}

@@ -1,6 +1,6 @@
 # Task List with Angular and Angular Material
 
-![image](https://user-images.githubusercontent.com/93260/126806169-6a50769d-ad4b-49dc-a5d0-aa69af05c7d4.png)
+![image](https://user-images.githubusercontent.com/93260/126908168-fa58af2f-d9c1-43ef-b87f-72765cc35617.png)
 
 Followed the tutorial on [YouTube](https://www.youtube.com/watch?v=3dHNOWTI7H8&t=1287s&ab_channel=TraversyMedia)
 but used Angular Material instead and wrote a few things slightly differently.

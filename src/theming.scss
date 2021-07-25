@@ -1,0 +1,15 @@
+@use '~@angular/material' as mat;
+@use './app/components/task-item/task-item.component-theme' as task-item;
+@use "./app/components/footer/footer.component-theme" as footer;
+
+@include mat.core();
+
+$task-list-primary: mat.define-palette(mat.$purple-palette, 500);
+$task-list-accent: mat.define-palette(mat.$green-palette, A200, A100, A400);
+$task-list-warn: mat.define-palette(mat.$red-palette);
+
+$task-list-theme: mat.define-light-theme($task-list-primary, $task-list-accent, $task-list-warn);
+
+@include mat.all-component-themes($task-list-theme);
+@include task-item.theme($task-list-theme);
+@include footer.theme($task-list-theme);
